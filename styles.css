@@ -3,8 +3,9 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 15% 85%;
     font-family: Garamond, serif;
+    min-width: 76rem;
 }
 
 h1{
@@ -20,7 +21,6 @@ p{
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
-
 }
 
 
@@ -47,6 +47,7 @@ p{
     background-color: white;
     display: flex;
     flex-direction: column;
+    gap: 0.005em;
 }
 #search > *{
     flex:1;
@@ -54,7 +55,6 @@ p{
     justify-content: flex-start;
     align-items: center;
     padding-left: 2em;
-    gap:1em
 }
 #searchBar{
     border-radius: 1em;
@@ -62,9 +62,134 @@ p{
     width: 50%;
     height: 2em;
     border: none;
-    margin-right: 8em;
+    margin-right: 15em;
+}
+
+#hiThere{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.buttons{
+    flex:2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+button{
+    width: 7em;
+    height: 3em;
+    border-radius: 2em;
+    background-color: #06b6d4;
+    border: none;
+    color: white;
 }
 
 #dashboard{
-    background-color: #ecfeff;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 49% 49%;
+}
+
+#yourProject{
+    grid-area: 1/1/-1/2;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 4% 28% 28% 28%;
+    padding: 1em;
+    min-width: 45rem;
+    gap: 1em;
+    
+}
+.sectionHead{
+    flex: 1;
+    margin-top: 0;
+    grid-area: 1/1/2/-1;
+    font-size: 1.5em;
+}
+.projectItems{
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: 12rem;
+}
+.projectItemsContent{
+    flex:10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+.turqSide{
+    position: relative;
+    width: 1em;
+    height: 100%;
+    border-top-left-radius:1em ;
+    border-bottom-left-radius: 1em;
+    background-color: #0f766e;
+}
+.projectIcons{
+    display: flex;
+    flex-shrink: 1;
+    width: 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectIconsCase{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#announcement{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 10rem;
+}
+
+#announcementContent{
+    flex:12;
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.announcementItems{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.announcementHead{
+    flex: 1;
+}
+.announcementBody{
+    flex: 1;
+}
+
+#trending{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#trendingContent{
+    flex:12;
+    border-radius: 1em;
+    background-color: white;
+    margin-bottom: 26%;
 }

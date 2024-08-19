@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
     <script src="https://kit.fontawesome.com/6892af9575.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -29,16 +32,139 @@
     </div>
     <div id="search">
         <div style="flex: 1;">
-            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #083344;"></i>
+            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #083344; padding-right: 1em;"></i>
             <input type="text" id="searchBar">
             <i class="fa-regular fa-bell fa-lg" style="color: #083344; margin-right: 0.5em;"></i>
             <img src="https://avatars.githubusercontent.com/u/89869237?v=4" alt="prfile photo" style="width: 2.5em; height: 2.5em; border-radius: 100%; margin-right: 0.5em;">
             <p>Baha Celik</p>
         </div>
         <div style="flex: 2;">
+            <img src="https://avatars.githubusercontent.com/u/89869237?v=4" alt="prfile photo" style="width: 4rem; height: 4rem; border-radius: 100%; margin-right: 0.5em;">
+            <div id="hiThere">
+                <p style="margin-bottom:0 ;">Hi there,</p>
+                <p style="font-size: x-large; margin-top: 0.3em;">Baha Celik (@bahacelik)</p>
+            </div>
 
+            <div class="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
     </div>
-    <div id="dashboard"></div>
+    <div id="dashboard">
+        <div id="yourProject">
+            <p class="sectionHead">Your Projects</p>
+
+            <div class="projectItems">
+                <div class="turqSide"></div>
+                <div class="projectItemsContent">
+                    <p style="margin: 0; font-size: large;">Visual calculator</p>
+                    <p style="margin: 0; min-height: 2rem; flex-shrink: 0;">This project is a one to one imitation of the native macos calculator app. From colors to all functions it gives you the full experience on web instead of an app.</p>
+                    <div class="projectIconsCase">
+                        <div class="projectIcons">
+                            <a href="https://github.com/p3rc1va1"><i class="fa-solid fa-star" style="color: #0f766e;"></i></a>
+                            <a href="https://p3rc1va1.github.io/visual-calculator/"><i class="fa-solid fa-eye" style="color: #0f766e;"></i></a>
+                            <a href="https://github.com/p3rc1va1/visual-calculator"><i class="fa-solid fa-code-fork" style="color: #0f766e;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectItems" style="flex-shrink: 1; min-width: 0;">
+                <div class="turqSide"></div>
+                <div class="projectItemsContent">
+                    <p style="margin: 0; font-size: large; ">Rock-Paper-Scissors</p>
+                    <p style="margin: 0; ">This project initially started as a console game but then was upgraded to a version that can be played via a custom UI that was made.</p>
+                    <div class="projectIconsCase">
+                        <div class="projectIcons">
+                            <a href="https://github.com/p3rc1va1"><i class="fa-solid fa-star" style="color: #0f766e;"></i></a>
+                            <a href="https://p3rc1va1.github.io/rock_paper_scissors/"><i class="fa-solid fa-eye" style="color: #0f766e;"></i></a>
+                            <a href="https://github.com/p3rc1va1/rock_paper_scissors"><i class="fa-solid fa-code-fork" style="color: #0f766e;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectItems">
+                <div class="turqSide"></div>
+                <div class="projectItemsContent">
+                    <p style="margin: 0; font-size: large; ">Sign-up Form</p>
+                    <p style="margin: 0; ">This project was my first experience with the html forms. Tried out different methods to gather user data and make it more intuitive.    </p>
+                    <div class="projectIconsCase">
+                        <div class="projectIcons">
+                            <a href="https://github.com/p3rc1va1"><i class="fa-solid fa-star" style="color: #0f766e;"></i></a>
+                            <a href="https://p3rc1va1.github.io/Sign-up-form/"><i class="fa-solid fa-eye" style="color: #0f766e;"></i></a>
+                            <a href="https://github.com/p3rc1va1/Sign-up-form"><i class="fa-solid fa-code-fork" style="color: #0f766e;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectItems">
+                <div class="turqSide"></div>
+                <div class="projectItemsContent">
+                    <p style="margin: 0; font-size: large;">Etch-a-Sketch</p>
+                    <p style="margin: 0; ">This project is the most fun project I have done. Seeing the beautiful art done by totally random colors definitely motivated me to do more!</p>
+                    <div class="projectIconsCase">
+                        <div class="projectIcons">
+                            <a href="https://github.com/p3rc1va1"><i class="fa-solid fa-star" style="color: #0f766e;"></i></a>
+                            <a href="https://p3rc1va1.github.io/Etch-a-Sketch/"><i class="fa-solid fa-eye" style="color: #0f766e;"></i></a>
+                            <a href="https://github.com/p3rc1va1/Etch-a-Sketch"><i class="fa-solid fa-code-fork" style="color: #0f766e;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectItems">
+                <div class="turqSide"></div>
+                <div class="projectItemsContent">
+                    <p style="margin: 0; font-size: large;">Shopping-list</p>
+                    <p style="margin: 0; ">This is a functional to-do like shopping list. You can add or delete items and also it has some validations!</p>
+                    <div class="projectIconsCase">
+                        <div class="projectIcons">
+                            <a href="https://github.com/p3rc1va1"><i class="fa-solid fa-star" style="color: #0f766e;"></i></a>
+                            <a href="https://p3rc1va1.github.io/shopping-list/"><i class="fa-solid fa-eye" style="color: #0f766e;"></i></a>
+                            <a href="https://github.com/p3rc1va1/shopping-list"><i class="fa-solid fa-code-fork" style="color: #0f766e;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectItems">
+                <div class="turqSide"></div>
+                <div class="projectItemsContent">
+                    <p style="margin: 0; font-size: large;">Landing-page</p>
+                    <p style="margin: 0; ">This project is a dummy landing page in which I boast myself and talk about how good I am for recruiters!</p>
+                    <div class="projectIconsCase">
+                        <div class="projectIcons">
+                            <a href="https://github.com/p3rc1va1"><i class="fa-solid fa-star" style="color: #0f766e;"></i></a>
+                            <a href="https://p3rc1va1.github.io/Landing-Page/"><i class="fa-solid fa-eye" style="color: #0f766e;"></i></a>
+                            <a href="https://github.com/p3rc1va1/Landing-Page"><i class="fa-solid fa-code-fork" style="color: #0f766e;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="announcement">
+            <p class="sectionHead">Announcements</p>
+            <div id="announcementContent">
+                <div class="announcementItems">
+                    <p class="announcementHead">Baha won the nobel prize for admin panels!</p>
+                </div>
+                <div class="announcementItems" style="border-top: solid; border-bottom: solid;">
+                    <p class="announcementHead">Lithuania is the happiest country for the youth!</p>
+                </div>
+                <div class="announcementItems">
+                    <p class="announcementHead">Crowdstrike error caused a global crisis!</p>
+                </div>
+            </div>
+        </div>
+        <div id="trending">
+            <p class="sectionHead">Trending</p>
+            <div id="trendingContent" style="padding: 1rem;">
+                <div style="display: flex;">
+                    <img src="https://avatars.githubusercontent.com/u/4441966?s=280&v=4" alt="" style="width: 3rem; height: 3rem;">
+                    <p>The Odin Project</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
